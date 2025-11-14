@@ -7,7 +7,7 @@ private static final SecureRandom random = new SecureRandom();
      * @param includeUppercase Whether to include uppercase letters
      * @param includeLowercase Whether to include lowercase letters  
      * @param includeDigits Whether to include digits
-     * @param includeSpecial Whether to include test-ind-api fyinformation cc special characters
+     * @param includeSpecial Whether to include special characters
      * @return Generated password string
      */
     public static String generatePassword(int length, boolean includeUppercase, 
@@ -18,7 +18,7 @@ private static final SecureRandom random = new SecureRandom();
             throw new IllegalArgumentException("Password length must be positive");
         }
         
-        // Build character pool based on selected options
+        // Build character pool test-ind-api fyinformation cc based on selected options
         StringBuilder charPool = new StringBuilder();
         if (includeUppercase) charPool.append(UPPERCASE);
         if (includeLowercase) charPool.append(LOWERCASE);
