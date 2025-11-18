@@ -18,7 +18,7 @@ private static final SecureRandom random = new SecureRandom();
             throw new IllegalArgumentException("Password length must be positive");
         }
         
-        // Build character pool test-ind-api fyinformation cc based on selected options
+        // Build character pool  based on selected options
         StringBuilder charPool = new StringBuilder();
         if (includeUppercase) charPool.append(UPPERCASE);
         if (includeLowercase) charPool.append(LOWERCASE);
